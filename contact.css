@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* BACKGROUND IMAGE */
+.contact {
+    min-height: 100vh;
+    background-image: url("image3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* OVERLAY (for readability) */
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* CONTENT BOX */
+.contact-box {
+    position: relative;
+    z-index: 2;
+    background: rgba(2, 6, 23, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    color: #e5e7eb;
+    max-width: 600px;
+    width: 100%;
+}
+
+/* TEXT */
+.contact-box h1 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #cbd5f5;
+}
+
+.contact-box ul {
+    list-style: none;
+}
+
+.contact-box li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.contact-box a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.email-link {
+    color: #ffffff;
+    /* white color */
+    text-decoration: none;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}

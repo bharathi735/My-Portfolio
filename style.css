@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* BODY BACKGROUND */
+body {
+  background-color: #1a1f3a;
+  background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* DARK OVERLAY */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(26, 31, 58, 0.7);
+  z-index: -1;
+}
+
+/* MAIN CARD */
+.wrapper {
+  width: 80%;
+  max-width: 700px;   /* compact container */
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2c3e91;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  padding: 20px 0;
+  text-align: center;  /* center content */
+}
+
+.role {
+  color: #2c3e91;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.hero-left h1 {
+  font-size: 2rem;  /* smaller heading */
+  margin: 15px 0;
+  color: #222;
+}
+
+.hero-left p {
+  color: #555;
+  max-width: 350px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  user-select: none;
+}
+
+.primary {
+  background: #2c3e91;
+  color: white;
+}
+
+.primary:hover {
+  background: #1f2b66;
+}
+
+.secondary {
+  border: 2px solid #ddd;
+  color: #333;
+}
+
+.secondary:hover {
+  background: #2c3e91;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-left p {
+    max-width: 90%;
+  }
+}
+
+
+
+
