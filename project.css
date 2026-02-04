@@ -92,7 +92,7 @@
   margin: 5px 5px 15px 0;
 }
 
-/* BUTTON */
+/* VIEW PROJECT BUTTON */
 .btn {
   display: inline-block;
   padding: 10px 22px;
@@ -106,6 +106,35 @@
 
 .btn:hover {
   background: #0ea5e9;
+}
+
+/* BOTTOM BUTTON CENTER */
+.center-btn {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* CERTIFICATE BUTTON */
+.btn-btn {
+  display: inline-block;
+  margin-left: 1200px;
+  text-decoration: none;
+  background-color:#38bdf8;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.btn-btn:hover {
+  background-color:navy;
+  transform: scale(1.05);
 }
 
 /* ANIMATIONS */

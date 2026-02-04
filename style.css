@@ -129,6 +129,15 @@ body::before {
   background: #2c3e91;
   color: white;
 }
+.resume {
+  border: 2px solid #ddd;
+  color: #333;
+}
+
+.resume:hover {
+  background: #2c3e91;
+  color: white;
+}
 
 /* RESPONSIVE */
 @media (max-width: 600px) {
